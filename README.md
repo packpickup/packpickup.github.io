@@ -1,6 +1,6 @@
 # Pack pick up
 
-Site: http://aamirafridi.github.io/packpickup
+Site: packpickup.com
 
 ## Deploy
 
