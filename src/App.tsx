@@ -10,6 +10,7 @@ import { Home } from "./pages/Home";
 export const App: FunctionComponent = () => {
   useEffect(() => {
     fetch("https://packpickup.com/data.json")
+      .then((r) => r.json())
       .then(console.log)
       .catch(console.error);
   }, []);
