@@ -16,7 +16,9 @@ export const App: FunctionComponent = () => {
 
   return (
     <HashRouter basename="/">
+      ====
       <Header />
+      =====
       <Switch>
         <Route exact path="/">
           <Home />
