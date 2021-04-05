@@ -1,0 +1,83 @@
+[
+  {
+    "driver-id": "driver-1",
+    "vehicle-id": "vehicle-1",
+    "name": "Abdul Ghafoor",
+    "image-url": "./assets/image-name.svg",
+    "mobile": "+97155345432",
+    "country": "UAE",
+    "city": "Dubai",
+    "area": "Al Quoz, Sharjah",
+    "listing-order": "0",
+    "rating-stars": "4",
+    "work-hours": {
+      "day": true,
+      "night": false
+    },
+    "working-days": {
+      "Saturday": true,
+      "Sunday": true,
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": false
+    },
+    "not-used-labour-rate": "1 AED per hour",
+    "not-used-material-rate": "1 AED per box"
+  },
+  {
+    "driver-id": "driver-2",
+    "vehicle-id": "vehicle-2",
+    "name": "Shah Islam",
+    "image-url": "./assets/image-name.svg",
+    "mobile": "+971505507892",
+    "country": "UAE",
+    "city": "Dubai",
+    "area": "Al Quoz, Sharjah, Dubai",
+    "listing-order": "1",
+    "rating-stars": "3",
+    "work-hours": {
+      "day": true,
+      "night": true
+    },
+    "working-days": {
+      "Saturday": true,
+      "Sunday": false,
+      "Monday": true,
+      "Tuesday": true,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": false
+    },
+    "not-used-labour-rate": "1 AED per hour",
+    "not-used-material-rate": "1 AED per box"
+  },
+  {
+    "driver-id": "driver-3",
+    "vehicle-id": "vehicle-3",
+    "name": "Kareem Jan Khan with long name",
+    "image-url": "./assets/image-name.svg",
+    "mobile": "+447722180577",
+    "country": "UAE",
+    "city": "Dubai",
+    "area": "Sharjah, Dubai",
+    "listing-order": "2",
+    "rating-stars": "5",
+    "work-hours": {
+      "day": false,
+      "night": true
+    },
+    "working-days": {
+      "Saturday": false,
+      "Sunday": false,
+      "Monday": false,
+      "Tuesday": false,
+      "Wednesday": true,
+      "Thursday": true,
+      "Friday": false
+    },
+    "not-used-labour-rate": "1 AED per hour",
+    "not-used-material-rate": "1 AED per box"
+  }
+]
