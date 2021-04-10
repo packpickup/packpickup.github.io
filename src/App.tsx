@@ -21,6 +21,9 @@ export const App: FunctionComponent = () => {
             <Detail />
           </Route>
         </Switch>
+        <footer className="footer">
+          <small>© PackPickup {new Date().getFullYear()}</small>
+        </footer>
       </Container>
     </HashRouter>
   );

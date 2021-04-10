@@ -1,0 +1,55 @@
+.home {
+  .banner-wrapper {
+    position: relative;
+
+    .country-selector {
+      position: absolute;
+      margin: 5px;
+
+      img {
+        width: 32px;
+        margin-right: 6px;
+      }
+    }
+    .user {
+      position: absolute;
+      right: 21px;
+      top: 3px;
+      img {
+        width: 20px;
+        margin-left: 5px;
+      }
+    }
+
+    .banner {
+      width: 100%;
+    }
+  }
+  .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #737577;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .v-type {
+    margin-bottom: 10px;
+    &:nth-child(even) {
+      padding-left: 5px;
+    }
+    &:nth-child(odd) {
+      padding-right: 5px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .see-more {
+    cursor: pointer;
+    width: 100%;
+  }
+}

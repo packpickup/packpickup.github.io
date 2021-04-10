@@ -2,37 +2,31 @@
   {
     "vehicle-type-id": "vehicle-type-1",
     "type": "Pickup",
-    "image-url": "./assets/image-name.svg",
-    "description": "1 Ton"
+    "image-url": "1-1t.svg"
   },
   {
     "vehicle-type-id": "vehicle-type-2",
     "type": "Pickup",
-    "image-url": "./assets/image-name.svg",
-    "description": "2,3,4 Ton"
+    "image-url": "2-3t.svg"
   },
   {
     "vehicle-type-id": "vehicle-type-3",
     "type": "Recovery",
-    "image-url": "./assets/image-name.svg",
-    "description": ""
+    "image-url": "3-recovery-3t.svg"
   },
   {
     "vehicle-type-id": "vehicle-type-4",
     "type": "Movers",
-    "image-url": "./assets/image-name.svg",
-    "description": ""
+    "image-url": "4-mover-3t.svg"
   },
   {
     "vehicle-type-id": "vehicle-type-5",
     "type": "Water Tanker",
-    "image-url": "./assets/image-name.svg",
-    "description": ""
+    "image-url": "5-water-tanker.svg"
   },
   {
     "vehicle-type-id": "vehicle-type-6",
     "type": "Truck & Trailer",
-    "image-url": "./assets/image-name.svg",
-    "description": ""
+    "image-url": "6-trailer-truck.svg"
   }
 ]
