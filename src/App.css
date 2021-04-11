@@ -1,4 +1,10 @@
 .footer {
   margin: 20px 0;
   text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.content {
+  min-height: 400px;
 }

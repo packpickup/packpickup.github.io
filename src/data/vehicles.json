@@ -2,7 +2,7 @@
   {
     "vehicle-id": "vehicle-1",
     "vehicle-type-id": "vehicle-type-1",
-    "image-urls": ["./assets/photo-name-1.svg", "./assets/photo-name-2.svg"],
+    "number-of-pictures": 3,
     "vehicle-brand": "Toyota",
     "brand-model": "Hilex",
     "model-year": "2015"
@@ -10,7 +10,7 @@
   {
     "vehicle-id": "vehicle-2",
     "vehicle-type-id": "vehicle-type-1",
-    "image-urls": ["./assets/photo-name-1.svg", "./assets/photo-name-2.svg"],
+    "number-of-pictures": 1,
     "vehicle-brand": "BMW",
     "brand-model": "5 series",
     "model-year": "2017"
@@ -18,7 +18,7 @@
   {
     "vehicle-id": "vehicle-3",
     "vehicle-type-id": "vehicle-type-1",
-    "image-urls": ["./assets/photo-name-1.svg", "./assets/photo-name-2.svg"],
+    "number-of-pictures": 1,
     "vehicle-brand": "Toyota",
     "brand-model": "Land cruiser",
     "model-year": "2012"
@@ -26,15 +26,15 @@
   {
     "vehicle-id": "vehicle-4",
     "vehicle-type-id": "vehicle-type-2",
-    "image-urls": ["./assets/photo-name-1.svg", "./assets/photo-name-2.svg"],
+    "number-of-pictures": 2,
     "vehicle-brand": "Toyota",
     "brand-model": "Big truck",
     "model-year": "2014"
   },
   {
     "vehicle-id": "vehicle-5",
-    "vehicle-type-id": "vehicle-type-1",
-    "image-urls": ["./assets/photo-name-1.svg", "./assets/photo-name-2.svg"],
+    "vehicle-type-id": "vehicle-type-2",
+    "number-of-pictures": 2,
     "vehicle-brand": "Honda",
     "brand-model": "Civic",
     "model-year": "2019"

@@ -2,6 +2,7 @@ import "./Home.scss";
 
 import { FunctionComponent } from "react";
 import { Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import vehicleTypes from "../data/vehicle-types.json";
 
@@ -19,7 +20,7 @@ export const Home: FunctionComponent = () => {
           </div>
           <div className="user">
             <span>Guest</span>
-            <img src={process.env.PUBLIC_URL + "/avatar.svg"} alt="UAE flag" />
+            <img src={process.env.PUBLIC_URL + "/avatar.svg"} alt="User" />
           </div>
           <img
             src={process.env.PUBLIC_URL + "/home-bg.jpg"}
@@ -36,10 +37,14 @@ export const Home: FunctionComponent = () => {
       <Row>
         {vehicleTypes.map((vehicleType) => (
           <Col xs="6" key={vehicleType["vehicle-type-id"]} className="v-type">
-            <img
-              src={`${process.env.PUBLIC_URL}/vehicle-types/${vehicleType["image-url"]}`}
-              alt={vehicleType.type}
-            />
+            <Link
+              to={`/search-results/?v-type=${vehicleType["vehicle-type-id"]}`}
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/vehicle-types/${vehicleType["image-url"]}`}
+                alt={vehicleType.type}
+              />
+            </Link>
           </Col>
         ))}
       </Row>

@@ -15,6 +15,7 @@ export const Header: FunctionComponent = () => {
             alt="Pack pickup"
           />
         </Link>
+        <div className="divider" />
       </Col>
     </Row>
   );

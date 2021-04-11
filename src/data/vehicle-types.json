@@ -1,12 +1,12 @@
 [
   {
     "vehicle-type-id": "vehicle-type-1",
-    "type": "Pickup",
+    "type": "Pickup (1 Ton)",
     "image-url": "1-1t.svg"
   },
   {
     "vehicle-type-id": "vehicle-type-2",
-    "type": "Pickup",
+    "type": "Pickup (2,3,4 Ton)",
     "image-url": "2-3t.svg"
   },
   {
