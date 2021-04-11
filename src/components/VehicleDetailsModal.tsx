@@ -149,12 +149,10 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
           <a
             target="whatsapp"
             href={`https://wa.me/${selectedVehicle.driver.mobile}?text=Hello ${
-              selectedVehicle.driver.name
+              selectedVehicle.driver.name.split(" ")[0]
             },%0a${encodeURI(
               "Message from: https://packpickup.com"
-            )} %0a${encodeURI(
-              "Are you available for packaging and transportation service?"
-            )}`}
+            )} %0a${encodeURI(whatsAppMessage)}`}
           >
             <img
               alt="WhatsApp"
@@ -180,3 +178,5 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
 };
 
 const days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+const whatsAppMessage =
+  "Are you available for packaging and transportation service?";
