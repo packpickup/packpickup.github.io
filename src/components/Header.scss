@@ -1,11 +1,16 @@
 .header {
   a {
-    width: calc(100% - 25px);
+    width: 80%;
     display: block;
     margin: auto;
+    padding-bottom: 15px;
+    @media (min-width: 576px) {
+      width: 60%;
+    }
+    max-width: 280px;
   }
   .logo {
-    width: 280px;
+    width: 100%;
   }
   .divider {
     border-top: 1px solid #c4c4c4;
