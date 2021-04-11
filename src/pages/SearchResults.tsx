@@ -27,19 +27,12 @@ export const SearchResults: FunctionComponent = () => {
   }, [vehicleTypeId]);
 
   const vehicleType = useMemo(() => {
-    return vehicleTypes.find(
-      (vehicleType) => vehicleType["vehicle-type-id"] === vehicleTypeId
+    return (
+      vehicleTypes.find(
+        (vehicleType) => vehicleType["vehicle-type-id"] === vehicleTypeId
+      ) || vehicleTypes[0]
     );
   }, [vehicleTypeId]);
-
-  if (!vehicleType || vehiclesByType.length === 0) {
-    return (
-      <div className="no-results">
-        No vehicles found. Please <Link to="/">click here</Link> to navigate to
-        home page
-      </div>
-    );
-  }
 
   return (
     <div className="search-results">
@@ -54,65 +47,75 @@ export const SearchResults: FunctionComponent = () => {
         <Col xs="5" sm="4">
           <img
             className="v-type-img"
-            src={`${process.env.PUBLIC_URL}/vehicle-types/${vehicleType["image-url"]}`}
+            src={`${process.env.PUBLIC_URL}/vehicle-types/simple/${vehicleType["image-url"]}`}
             alt={vehicleType.type}
           />
         </Col>
       </Row>
 
-      {vehiclesByType.map((vehicle) => {
-        return (
-          <Row key={vehicle["vehicle-id"]} className="result-item">
-            <Col xs="4" sm="3">
-              <img
-                className="v-main-img"
-                src={`${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/main.jpg`}
-                alt={vehicle["vehicle-brand"]}
-              />
-            </Col>
-            <Col xs="8" sm="6">
-              <h4>
-                {vehicle["vehicle-brand"]} - {vehicle["brand-model"]} -{" "}
-                {vehicle["model-year"]}
-              </h4>
+      {vehiclesByType.length === 0 ? (
+        <div>
+          No vehicles found. Please <Link to="/">click here</Link> to navigate
+          to home page
+        </div>
+      ) : (
+        vehiclesByType.map((vehicle) => {
+          return (
+            <Row key={vehicle["vehicle-id"]} className="result-item">
+              <Col xs="4" sm="3">
+                <img
+                  className="v-main-img"
+                  src={`${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/main.jpg`}
+                  alt={vehicle["vehicle-brand"]}
+                />
+              </Col>
+              <Col xs="8" sm="6">
+                <h4>
+                  {vehicle["vehicle-brand"]} - {vehicle["brand-model"]} -{" "}
+                  {vehicle["model-year"]}
+                </h4>
+                {vehicle.driver && (
+                  <>
+                    <div>
+                      <img
+                        className="driver-name-avatar"
+                        src={`${process.env.PUBLIC_URL}/green-avatar.svg`}
+                        alt="Driver"
+                      />{" "}
+                      {vehicle.driver.name}
+                    </div>
+                    <div>Area: {vehicle.driver.area}</div>
+                    <div>
+                      {vehicle.driver.city}, {vehicle.driver.country}
+                    </div>
+                  </>
+                )}
+              </Col>
               {vehicle.driver && (
                 <>
-                  <div>
-                    <img
-                      className="driver-name-avatar"
-                      src={`${process.env.PUBLIC_URL}/green-avatar.svg`}
-                      alt="Driver"
-                    />{" "}
-                    {vehicle.driver.name}
-                  </div>
-                  <div>Area: {vehicle.driver.area}</div>
-                  <div>
-                    {vehicle.driver.city}, {vehicle.driver.country}
-                  </div>
+                  <Col xs="4" sm="1" className="spacer" />
+                  <Col xs="8" sm="3" className="driver-info">
+                    <>
+                      <div
+                        className="driver-image"
+                        style={{
+                          backgroundImage: `url(${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/driver.jpg)`,
+                        }}
+                      />
+                      <span className="rating">
+                        <Rating
+                          rating={Number(vehicle.driver["rating-stars"])}
+                        />
+                      </span>
+                    </>
+                  </Col>
                 </>
               )}
-            </Col>
-            {vehicle.driver && (
-              <>
-                <Col xs="4" sm="1" className="spacer" />
-                <Col xs="8" sm="3" className="driver-info">
-                  <>
-                    <div
-                      className="driver-image"
-                      style={{
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/driver.jpg)`,
-                      }}
-                    />
-                    <span className="rating">
-                      <Rating rating={Number(vehicle.driver["rating-stars"])} />
-                    </span>
-                  </>
-                </Col>
-              </>
-            )}
-          </Row>
-        );
-      })}
+            </Row>
+          );
+        })
+      )}
+
       <Row>
         <Link className="back-to-home-link" to="/">
           Main page
