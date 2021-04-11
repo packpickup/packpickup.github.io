@@ -78,4 +78,18 @@
       display: none;
     }
   }
+
+  .back-to-home-link {
+    border: 3px solid #000;
+    font-size: 24px;
+    display: block;
+    padding: 13px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    color: #000;
+    font-weight: 500;
+  }
 }

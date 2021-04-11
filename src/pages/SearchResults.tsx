@@ -113,6 +113,11 @@ export const SearchResults: FunctionComponent = () => {
           </Row>
         );
       })}
+      <Row>
+        <Link className="back-to-home-link" to="/">
+          Main page
+        </Link>
+      </Row>
     </div>
   );
 };
