@@ -29,7 +29,7 @@
     "rating-stars": "3",
     "work-hours": {
       "day": true,
-      "night": true
+      "night": false
     },
     "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
@@ -47,7 +47,7 @@
     "rating-stars": "5",
     "work-hours": {
       "day": false,
-      "night": true
+      "night": false
     },
     "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",

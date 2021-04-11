@@ -90,14 +90,16 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
           {days.map((day) => {
             return (
               <div className="day" key={day}>
-                {selectedVehicle.driver["working-days"].includes(day) ? (
+                {(!selectedVehicle.driver["work-hours"].day &&
+                  !selectedVehicle.driver["work-hours"].night) ||
+                !selectedVehicle.driver["working-days"].includes(day) ? (
                   <img
-                    src={`${process.env.PUBLIC_URL}/days/yes-${day}.svg`}
+                    src={`${process.env.PUBLIC_URL}/days/no-${day}.svg`}
                     alt={day}
                   />
                 ) : (
                   <img
-                    src={`${process.env.PUBLIC_URL}/days/no-${day}.svg`}
+                    src={`${process.env.PUBLIC_URL}/days/yes-${day}.svg`}
                     alt={day}
                   />
                 )}
