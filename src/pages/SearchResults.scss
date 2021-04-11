@@ -20,62 +20,6 @@
     margin-bottom: 15px;
   }
 
-  .result-item {
-    border: 3px solid #5c5c5c;
-    margin-bottom: 15px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  .driver-image {
-    height: 50px;
-    width: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 100%;
-    display: inline-block;
-  }
-
-  .driver-name-avatar {
-    width: 17px;
-    margin-top: -5px;
-    margin-right: 3px;
-  }
-
-  .v-main-img {
-    width: 100%;
-  }
-
-  .driver-info {
-    text-align: left;
-    @media (min-width: 576px) {
-      text-align: center;
-    }
-  }
-
-  .rating {
-    top: -20px;
-    position: relative;
-    left: 10px;
-    @media (min-width: 576px) {
-      top: 0;
-      left: 0;
-    }
-  }
-
-  .spacer {
-    @media (min-width: 576px) {
-      display: none;
-    }
-  }
-
   .back-to-home-link {
     border: 3px solid #000;
     font-size: 24px;
@@ -89,5 +33,15 @@
     color: #000;
     font-weight: 500;
     max-width: 540px;
+  }
+}
+
+.custom-modal {
+  max-width: 540px;
+  @media (max-width: 576px) {
+    margin: 5px;
+  }
+  .modal-content {
+    border-radius: 0;
   }
 }

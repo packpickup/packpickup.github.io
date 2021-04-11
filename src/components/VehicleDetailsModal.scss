@@ -1,0 +1,90 @@
+.vehicle-details {
+  max-width: 540px;
+  width: 100%;
+  padding: 15px;
+  padding-bottom: 40px;
+
+  .v-type-img {
+    width: 170px;
+  }
+
+  .close-img {
+    width: 100%;
+  }
+
+  .v-card {
+    margin-top: 20px;
+    border: none;
+
+    .v-main-img {
+      padding: 0;
+    }
+  }
+
+  .working-times {
+    img {
+      width: 22px;
+      margin-top: -3px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  .working-days {
+    margin-top: 20px;
+    .days {
+      margin-top: 15px;
+      display: flex;
+      flex-flow: row;
+      .day {
+        flex: 1 1 auto;
+        width: 100%;
+        margin: 0 1px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        @media (min-width: 576px) {
+          margin: 0 10px;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .photos {
+    margin-top: 20px;
+
+    img {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .close {
+    border: 3px solid #000;
+    font-size: 24px;
+    display: block;
+    padding: 13px 0;
+    text-align: center;
+    width: calc(100% - 3px);
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    color: #000;
+    font-weight: 500;
+    max-width: 540px;
+    opacity: 1;
+    @media (max-width: 576px) {
+      left: 3px;
+    }
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+}

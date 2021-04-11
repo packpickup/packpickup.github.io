@@ -1,10 +1,11 @@
 import "./SearchResults.scss";
 
-import { Fragment, FunctionComponent, useMemo } from "react";
-import { Col, Row } from "react-bootstrap";
+import { FunctionComponent, useMemo, useState } from "react";
+import { Col, Modal, Row } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 
-import { Rating } from "../components/Rating";
+import { VehicleDetailCard } from "../components/VehicleDetailCard";
+import { VehicleDetailsModal } from "../components/VehicleDetailsModal";
 import drivers from "../data/drivers.json";
 import vehicleTypes from "../data/vehicle-types.json";
 import vehicles from "../data/vehicles.json";
@@ -12,6 +13,10 @@ import vehicles from "../data/vehicles.json";
 export const SearchResults: FunctionComponent = () => {
   const { search } = useLocation();
   const vehicleTypeId = search.split("?")[1].split("=")[1];
+  const [show, setShow] = useState(false);
+  const [activeVehicle, setActiveVehicle] = useState<
+    typeof vehicles[number] & { driver: typeof drivers[number] }
+  >();
 
   const vehiclesByType = useMemo(() => {
     const filteredVehicles = vehicles.filter(
@@ -20,9 +25,10 @@ export const SearchResults: FunctionComponent = () => {
 
     return filteredVehicles.map((filteredVehicle) => ({
       ...filteredVehicle,
-      driver: drivers.find(
-        (driver) => driver["vehicle-id"] === filteredVehicle["vehicle-id"]
-      ),
+      driver:
+        drivers.find(
+          (driver) => driver["vehicle-id"] === filteredVehicle["vehicle-id"]
+        ) || drivers[0],
     }));
   }, [vehicleTypeId]);
 
@@ -61,60 +67,35 @@ export const SearchResults: FunctionComponent = () => {
       ) : (
         vehiclesByType.map((vehicle) => {
           return (
-            <Row key={vehicle["vehicle-id"]} className="result-item">
-              <Col xs="4" sm="3">
-                <img
-                  className="v-main-img"
-                  src={`${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/main.jpg`}
-                  alt={vehicle["vehicle-brand"]}
-                />
-              </Col>
-              <Col xs="8" sm="6">
-                <h4>
-                  {vehicle["vehicle-brand"]} - {vehicle["brand-model"]} -{" "}
-                  {vehicle["model-year"]}
-                </h4>
-                {vehicle.driver && (
-                  <>
-                    <div>
-                      <img
-                        className="driver-name-avatar"
-                        src={`${process.env.PUBLIC_URL}/green-avatar.svg`}
-                        alt="Driver"
-                      />{" "}
-                      {vehicle.driver.name}
-                    </div>
-                    <div>Area: {vehicle.driver.area}</div>
-                    <div>
-                      {vehicle.driver.city}, {vehicle.driver.country}
-                    </div>
-                  </>
-                )}
-              </Col>
-              {vehicle.driver && (
-                <>
-                  <Col xs="4" sm="1" className="spacer" />
-                  <Col xs="8" sm="3" className="driver-info">
-                    <>
-                      <div
-                        className="driver-image"
-                        style={{
-                          backgroundImage: `url(${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/driver.jpg)`,
-                        }}
-                      />
-                      <span className="rating">
-                        <Rating
-                          rating={Number(vehicle.driver["rating-stars"])}
-                        />
-                      </span>
-                    </>
-                  </Col>
-                </>
-              )}
-            </Row>
+            <VehicleDetailCard
+              key={vehicle["vehicle-id"]}
+              vehicle={vehicle}
+              onClick={() => {
+                setActiveVehicle(vehicle);
+                setShow(true);
+              }}
+            />
           );
         })
       )}
+
+      <Modal
+        show={show}
+        animation={false}
+        onHide={() => {
+          setShow(false);
+          setActiveVehicle(undefined);
+        }}
+        dialogClassName="custom-modal"
+      >
+        {activeVehicle && (
+          <VehicleDetailsModal
+            vehicleType={vehicleType}
+            selectedVehicle={activeVehicle}
+            onHide={() => setShow(false)}
+          />
+        )}
+      </Modal>
 
       <Row>
         <Link className="back-to-home-link" to="/">

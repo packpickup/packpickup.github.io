@@ -11,17 +11,9 @@
     "rating-stars": "4",
     "work-hours": {
       "day": true,
-      "night": false
+      "night": true
     },
-    "working-days": {
-      "Saturday": true,
-      "Sunday": true,
-      "Monday": true,
-      "Tuesday": true,
-      "Wednesday": true,
-      "Thursday": true,
-      "Friday": false
-    },
+    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   },
@@ -39,15 +31,7 @@
       "day": true,
       "night": true
     },
-    "working-days": {
-      "Saturday": true,
-      "Sunday": false,
-      "Monday": true,
-      "Tuesday": true,
-      "Wednesday": true,
-      "Thursday": true,
-      "Friday": false
-    },
+    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   },
@@ -65,15 +49,7 @@
       "day": false,
       "night": true
     },
-    "working-days": {
-      "Saturday": false,
-      "Sunday": false,
-      "Monday": false,
-      "Tuesday": false,
-      "Wednesday": true,
-      "Thursday": true,
-      "Friday": false
-    },
+    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   },
@@ -91,15 +67,7 @@
       "day": false,
       "night": true
     },
-    "working-days": {
-      "Saturday": false,
-      "Sunday": false,
-      "Monday": false,
-      "Tuesday": false,
-      "Wednesday": true,
-      "Thursday": true,
-      "Friday": false
-    },
+    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   },
@@ -115,17 +83,9 @@
     "rating-stars": "5",
     "work-hours": {
       "day": false,
-      "night": true
+      "night": false
     },
-    "working-days": {
-      "Saturday": false,
-      "Sunday": false,
-      "Monday": false,
-      "Tuesday": false,
-      "Wednesday": true,
-      "Thursday": true,
-      "Friday": false
-    },
+    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   }
