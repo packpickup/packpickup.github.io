@@ -89,7 +89,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
         <Col xs="12" className="days">
           {days.map((day) => {
             return (
-              <div className="day">
+              <div className="day" key={day}>
                 {selectedVehicle.driver["working-days"].includes(day) ? (
                   <img
                     src={`${process.env.PUBLIC_URL}/days/yes-${day}.svg`}
@@ -124,7 +124,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
           />
         </Col>
         {[...Array(selectedVehicle["number-of-pictures"])].map((_, i) => (
-          <Col xs="12" sm="6">
+          <Col xs="12" sm="6" key={i}>
             <img
               key={i}
               alt="vehicle"
@@ -134,6 +134,34 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
             />
           </Col>
         ))}
+      </Row>
+
+      <Row className="comms">
+        <Col xs="6" className="sms">
+          <a href={`tel:${selectedVehicle.driver.mobile}`}>
+            <img
+              alt="Call"
+              src={`${process.env.PUBLIC_URL}/comms/phone-call.png`}
+            />
+          </a>
+        </Col>
+        <Col xs="6" className="whatsapp">
+          <a
+            target="whatsapp"
+            href={`https://wa.me/${selectedVehicle.driver.mobile}?text=Hello ${
+              selectedVehicle.driver.name
+            },%0a${encodeURI(
+              "Message from: https://packpickup.com"
+            )} %0a${encodeURI(
+              "Are you available for packaging and transportation service?"
+            )}`}
+          >
+            <img
+              alt="WhatsApp"
+              src={`${process.env.PUBLIC_URL}/comms/whatsapp.png`}
+            />
+          </a>
+        </Col>
       </Row>
 
       <Row>
