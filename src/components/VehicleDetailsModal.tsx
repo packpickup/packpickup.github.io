@@ -41,16 +41,16 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
       <VehicleDetailCard className="v-card" vehicle={selectedVehicle} />
 
       <Row className="comms">
-        <Col xs="6" className="sms">
+        <Col xs="6">
           <a href={`tel:${selectedVehicle.driver.mobile}`}>
-            Call
+            <span>Call</span>
             <img
               alt="Call"
               src={`${process.env.PUBLIC_URL}/comms/phone-call.png`}
             />
           </a>
         </Col>
-        <Col xs="6" className="whatsapp">
+        <Col xs="6">
           <a
             target="whatsapp"
             href={`https://wa.me/${selectedVehicle.driver.mobile}?text=Hello ${
@@ -59,7 +59,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
               "Message from: https://packpickup.com"
             )} %0a${encodeURI(whatsAppMessage)}`}
           >
-            WhatsApp
+            <span>WhatsApp</span>
             <img
               alt="WhatsApp"
               src={`${process.env.PUBLIC_URL}/comms/whatsapp.png`}

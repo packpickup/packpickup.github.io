@@ -58,7 +58,18 @@
   }
 
   .comms {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+
+    > div {
+      text-align: center;
+    }
+
+    span {
+      display: none;
+      @media (min-width: 576px) {
+        display: inline-block;
+      }
+    }
     button {
       border: none;
       background: none;
