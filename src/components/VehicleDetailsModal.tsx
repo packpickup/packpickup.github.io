@@ -24,6 +24,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
       <Row>
         <Col xs="9" sm="10">
           <img
+            loading="lazy"
             className="v-type-img"
             src={`${process.env.PUBLIC_URL}/vehicle-types/simple/${vehicleType["image-url"]}`}
             alt={vehicleType.type}
@@ -45,6 +46,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
           <a href={`tel:${selectedVehicle.driver.mobile}`}>
             <span>Call</span>
             <img
+              loading="lazy"
               alt="Call"
               src={`${process.env.PUBLIC_URL}/comms/phone-call.png`}
             />
@@ -52,6 +54,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
         </Col>
         <Col xs="6">
           <a
+            loading="lazy"
             target="whatsapp"
             href={`https://wa.me/${selectedVehicle.driver.mobile}?text=Hello ${
               selectedVehicle.driver.name.split(" ")[0]
@@ -74,12 +77,14 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
         </Col>
         <Col xs="12" sm="6">
           <img
+            loading="lazy"
             alt="vehicle main"
             src={`${process.env.PUBLIC_URL}/vehicles/${selectedVehicle["vehicle-id"]}/main.jpg`}
           />
         </Col>
         <Col xs="12" sm="6">
           <img
+            loading="lazy"
             alt="driver"
             src={`${process.env.PUBLIC_URL}/vehicles/${selectedVehicle["vehicle-id"]}/driver.jpg`}
           />
@@ -88,6 +93,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
           <Col xs="12" sm="6" key={i}>
             <img
               key={i}
+              loading="lazy"
               alt="vehicle"
               src={`${process.env.PUBLIC_URL}/vehicles/${
                 selectedVehicle["vehicle-id"]

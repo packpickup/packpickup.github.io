@@ -27,6 +27,7 @@ export const VehicleDetailCard: FunctionComponent<Props> = ({
     >
       <Col xs="4" sm="3" className="v-main-img">
         <img
+          loading="lazy"
           src={`${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/main.jpg`}
           alt={vehicle["vehicle-brand"]}
         />
@@ -40,6 +41,7 @@ export const VehicleDetailCard: FunctionComponent<Props> = ({
           <>
             <div>
               <img
+                loading="lazy"
                 className="driver-name-avatar"
                 src={`${process.env.PUBLIC_URL}/green-avatar.svg`}
                 alt="Driver"

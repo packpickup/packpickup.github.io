@@ -34,6 +34,7 @@ export const Home: FunctionComponent = () => {
               to={`/search-results/?v-type=${vehicleType["vehicle-type-id"]}`}
             >
               <img
+                loading="lazy"
                 src={`${process.env.PUBLIC_URL}/vehicle-types/${vehicleType["image-url"]}`}
                 alt={vehicleType.type}
               />
@@ -44,6 +45,7 @@ export const Home: FunctionComponent = () => {
       <Row>
         <Col>
           <img
+            loading="lazy"
             onClick={() => window.alert("Work in progress...")}
             className="see-more"
             src={`${process.env.PUBLIC_URL}/vehicle-types/see-more-vehicles.svg`}

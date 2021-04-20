@@ -45,13 +45,18 @@ export const SearchResults: FunctionComponent = () => {
       <Row className="header">
         <Col xs="7" sm="8">
           <div className="user">
-            <img src={process.env.PUBLIC_URL + "/avatar.svg"} alt="User" />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "/avatar.svg"}
+              alt="User"
+            />
             <span>Guest</span>
           </div>
           <h1>{vehicleType.type}</h1>
         </Col>
         <Col xs="5" sm="4">
           <img
+            loading="lazy"
             className="v-type-img"
             src={`${process.env.PUBLIC_URL}/vehicle-types/simple/${vehicleType["image-url"]}`}
             alt={vehicleType.type}
