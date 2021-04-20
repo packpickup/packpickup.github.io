@@ -9,11 +9,6 @@
     "area": "Al Quoz, Sharjah",
     "listing-order": "0",
     "rating-stars": "4",
-    "work-hours": {
-      "day": true,
-      "night": true
-    },
-    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   },
@@ -27,11 +22,6 @@
     "area": "Al Quoz, Sharjah, Dubai",
     "listing-order": "1",
     "rating-stars": "3",
-    "work-hours": {
-      "day": true,
-      "night": false
-    },
-    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   },
@@ -45,11 +35,6 @@
     "area": "Sharjah, Dubai",
     "listing-order": "2",
     "rating-stars": "5",
-    "work-hours": {
-      "day": false,
-      "night": false
-    },
-    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   },
@@ -63,11 +48,6 @@
     "area": "Sharjah, Dubai",
     "listing-order": "2",
     "rating-stars": "5",
-    "work-hours": {
-      "day": false,
-      "night": true
-    },
-    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   },
@@ -81,11 +61,6 @@
     "area": "Sharjah, Dubai",
     "listing-order": "2",
     "rating-stars": "5",
-    "work-hours": {
-      "day": false,
-      "night": false
-    },
-    "working-days": ["sun", "mon", "tue", "wed", "thu"],
     "not-used-labour-rate": "1 AED per hour",
     "not-used-material-rate": "1 AED per box"
   }

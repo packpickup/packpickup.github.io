@@ -8,8 +8,12 @@
     width: 170px;
   }
 
-  .close-img {
-    width: 100%;
+  .modal-close {
+    text-align: right;
+    img {
+      width: 35px;
+      cursor: pointer;
+    }
   }
 
   .v-card {
@@ -18,41 +22,6 @@
 
     .v-main-img {
       padding: 0;
-    }
-  }
-
-  .working-times {
-    img {
-      width: 22px;
-      margin-top: -3px;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-  }
-
-  .working-days {
-    margin-top: 20px;
-    .days {
-      margin-top: 15px;
-      display: flex;
-      flex-flow: row;
-      .day {
-        flex: 1 1 auto;
-        width: 100%;
-        margin: 0 1px;
-        &:first-child {
-          margin-left: 0;
-        }
-        &:last-child {
-          margin-right: 0;
-        }
-        @media (min-width: 576px) {
-          margin: 0 10px;
-        }
-        img {
-          max-width: 100%;
-        }
-      }
     }
   }
 
@@ -89,11 +58,7 @@
   }
 
   .comms {
-    position: fixed;
-    bottom: 70px;
-    max-width: 540px;
-    width: 100%;
-
+    margin-bottom: 20px;
     button {
       border: none;
       background: none;
@@ -101,10 +66,7 @@
 
     img {
       width: 50px;
-    }
-
-    .whatsapp {
-      text-align: right;
+      margin-left: 10px;
     }
   }
 }

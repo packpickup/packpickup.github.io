@@ -29,9 +29,8 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
             alt={vehicleType.type}
           />
         </Col>
-        <Col xs="3" sm="2">
+        <Col xs="3" sm="2" className="modal-close">
           <img
-            className="close-img"
             src={`${process.env.PUBLIC_URL}/close.svg`}
             alt="Close"
             onClick={onHide}
@@ -41,71 +40,31 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
 
       <VehicleDetailCard className="v-card" vehicle={selectedVehicle} />
 
-      <Row>
-        <Col className="working-times">
-          <strong>Working hours:</strong>{" "}
-          {selectedVehicle.driver["work-hours"].day &&
-          selectedVehicle.driver["work-hours"].night ? (
-            <strong>
-              <img
-                src={`${process.env.PUBLIC_URL}/time/24-hrs.png`}
-                alt="24 hours"
-              />
-              24Hrs
-            </strong>
-          ) : selectedVehicle.driver["work-hours"].day ? (
-            <strong>
-              <img
-                src={`${process.env.PUBLIC_URL}/time/day.png`}
-                alt="day time"
-              />
-              Day
-            </strong>
-          ) : !selectedVehicle.driver["work-hours"].day &&
-            !selectedVehicle.driver["work-hours"].night ? (
-            <strong style={{ color: "red" }}>
-              <img
-                src={`${process.env.PUBLIC_URL}/time/closed.png`}
-                alt="not available"
-              />
-              Sorry not available at the moment
-            </strong>
-          ) : (
-            <strong>
-              <img
-                src={`${process.env.PUBLIC_URL}/time/night.png`}
-                alt="not available"
-              />
-              Night
-            </strong>
-          )}
+      <Row className="comms">
+        <Col xs="6" className="sms">
+          <a href={`tel:${selectedVehicle.driver.mobile}`}>
+            Call
+            <img
+              alt="Call"
+              src={`${process.env.PUBLIC_URL}/comms/phone-call.png`}
+            />
+          </a>
         </Col>
-      </Row>
-
-      <Row className="working-days">
-        <Col xs="12">
-          <strong>Working days:</strong>
-        </Col>
-        <Col xs="12" className="days">
-          {days.map((day) => {
-            return (
-              <div className="day" key={day}>
-                {(!selectedVehicle.driver["work-hours"].day &&
-                  !selectedVehicle.driver["work-hours"].night) ||
-                !selectedVehicle.driver["working-days"].includes(day) ? (
-                  <img
-                    src={`${process.env.PUBLIC_URL}/days/no-${day}.svg`}
-                    alt={day}
-                  />
-                ) : (
-                  <img
-                    src={`${process.env.PUBLIC_URL}/days/yes-${day}.svg`}
-                    alt={day}
-                  />
-                )}
-              </div>
-            );
-          })}
+        <Col xs="6" className="whatsapp">
+          <a
+            target="whatsapp"
+            href={`https://wa.me/${selectedVehicle.driver.mobile}?text=Hello ${
+              selectedVehicle.driver.name.split(" ")[0]
+            },%0a${encodeURI(
+              "Message from: https://packpickup.com"
+            )} %0a${encodeURI(whatsAppMessage)}`}
+          >
+            WhatsApp
+            <img
+              alt="WhatsApp"
+              src={`${process.env.PUBLIC_URL}/comms/whatsapp.png`}
+            />
+          </a>
         </Col>
       </Row>
 
@@ -136,32 +95,6 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
             />
           </Col>
         ))}
-      </Row>
-
-      <Row className="comms">
-        <Col xs="6" className="sms">
-          <a href={`tel:${selectedVehicle.driver.mobile}`}>
-            <img
-              alt="Call"
-              src={`${process.env.PUBLIC_URL}/comms/phone-call.png`}
-            />
-          </a>
-        </Col>
-        <Col xs="6" className="whatsapp">
-          <a
-            target="whatsapp"
-            href={`https://wa.me/${selectedVehicle.driver.mobile}?text=Hello ${
-              selectedVehicle.driver.name.split(" ")[0]
-            },%0a${encodeURI(
-              "Message from: https://packpickup.com"
-            )} %0a${encodeURI(whatsAppMessage)}`}
-          >
-            <img
-              alt="WhatsApp"
-              src={`${process.env.PUBLIC_URL}/comms/whatsapp.png`}
-            />
-          </a>
-        </Col>
       </Row>
 
       <Row>

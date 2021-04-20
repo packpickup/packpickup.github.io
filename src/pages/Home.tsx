@@ -11,13 +11,6 @@ export const Home: FunctionComponent = () => {
     <div className="home">
       <Row>
         <Col xs="12" className="banner-wrapper">
-          <div className="country-selector">
-            <img
-              src={process.env.PUBLIC_URL + "/uae-flag.svg"}
-              alt="UAE flag"
-            />
-            <span>UAE</span>
-          </div>
           <div className="user">
             <span>Guest</span>
             <img src={process.env.PUBLIC_URL + "/avatar.svg"} alt="User" />
@@ -31,7 +24,7 @@ export const Home: FunctionComponent = () => {
       </Row>
       <Row>
         <Col xs="12">
-          <h1 className="title">Hire! Packing and Transportation services</h1>
+          <h1 className="title">Hire Transportation Services</h1>
         </Col>
       </Row>
       <Row>
