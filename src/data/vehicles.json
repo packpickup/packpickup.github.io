@@ -2,41 +2,49 @@
   {
     "vehicle-id": "vehicle-1",
     "vehicle-type-id": "vehicle-type-1",
-    "number-of-pictures": 3,
+    "number-of-pictures-ref": 3,
     "vehicle-brand": "Toyota",
     "brand-model": "Hilex",
-    "model-year": "2015"
+    "model-year": "2015",
   },
   {
     "vehicle-id": "vehicle-2",
     "vehicle-type-id": "vehicle-type-1",
-    "number-of-pictures": 1,
+    "number-of-pictures-ref": 1,
     "vehicle-brand": "BMW",
     "brand-model": "5 series",
-    "model-year": "2017"
+    "model-year": "2017",
   },
   {
     "vehicle-id": "vehicle-3",
     "vehicle-type-id": "vehicle-type-1",
-    "number-of-pictures": 1,
+    "number-of-pictures-ref": 1,
     "vehicle-brand": "Toyota",
     "brand-model": "Land cruiser",
-    "model-year": "2012"
+    "model-year": "2012",
   },
   {
     "vehicle-id": "vehicle-4",
     "vehicle-type-id": "vehicle-type-2",
-    "number-of-pictures": 2,
+    "number-of-pictures-ref": 2,
     "vehicle-brand": "Toyota",
     "brand-model": "Big truck",
-    "model-year": "2014"
+    "model-year": "2014",
   },
   {
     "vehicle-id": "vehicle-5",
     "vehicle-type-id": "vehicle-type-2",
-    "number-of-pictures": 2,
+    "number-of-pictures-ref": 2,
     "vehicle-brand": "Honda",
     "brand-model": "Civic",
-    "model-year": "2019"
-  }
-]
+    "model-year": "2019",
+  },
+  {
+    "vehicle-id": "vehicle-6",
+    "vehicle-type-id": "vehicle-type-3",
+    "number-of-pictures-ref": 2,
+    "vehicle-brand": "New Honda",
+    "brand-model": "New Civic",
+    "model-year": "2021",
+  },
+];
