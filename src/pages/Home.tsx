@@ -24,7 +24,7 @@ export const Home: FunctionComponent = () => {
       </Row>
       <Row>
         <Col xs="12">
-          <h1 className="title">Hire Transportation Services</h1>
+          <h1 className="title">Hire! Transportation services</h1>
         </Col>
       </Row>
       <Row>
