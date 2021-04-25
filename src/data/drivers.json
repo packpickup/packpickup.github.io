@@ -48,15 +48,5 @@
     "city": "Dubai",
     "area": "Sharjah, Dubai",
     "rating-stars": "5"
-  },
-  {
-    "driver-id": "driver-6",
-    "vehicle-id": "vehicle-6",
-    "name": "James Khan",
-    "mobile": "+97151243435",
-    "country": "UAE",
-    "city": "Dubai",
-    "area": "Sharjah, Dubai",
-    "rating-stars": "2"
   }
 ]
