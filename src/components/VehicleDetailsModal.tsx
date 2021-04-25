@@ -54,7 +54,6 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
         </Col>
         <Col xs="6">
           <a
-            loading="lazy"
             target="whatsapp"
             href={`https://wa.me/${selectedVehicle.driver.mobile}?text=Hello ${
               selectedVehicle.driver.name.split(" ")[0]
@@ -89,7 +88,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
             src={`${process.env.PUBLIC_URL}/vehicles/${selectedVehicle["vehicle-id"]}/driver.jpg`}
           />
         </Col>
-        {[...Array(selectedVehicle["number-of-pictures"])].map((_, i) => (
+        {[...Array(selectedVehicle["number-of-pictures-ref"])].map((_, i) => (
           <Col xs="12" sm="6" key={i}>
             <img
               key={i}
