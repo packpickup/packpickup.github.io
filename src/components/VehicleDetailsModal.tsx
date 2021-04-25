@@ -4,33 +4,22 @@ import { FunctionComponent } from "react";
 import { Col, Row } from "react-bootstrap";
 
 import drivers from "../data/drivers.json";
-import vehicleTypes from "../data/vehicle-types.json";
 import vehicles from "../data/vehicles.json";
 import { VehicleDetailCard } from "./VehicleDetailCard";
 
 type Props = {
-  vehicleType: typeof vehicleTypes[0];
   selectedVehicle: typeof vehicles[0] & { driver: typeof drivers[0] };
   onHide: () => void;
 };
 
 export const VehicleDetailsModal: FunctionComponent<Props> = ({
-  vehicleType,
   selectedVehicle,
   onHide,
 }) => {
   return (
     <div className="vehicle-details">
       <Row>
-        <Col xs="9" sm="10">
-          <img
-            loading="lazy"
-            className="v-type-img"
-            src={`${process.env.PUBLIC_URL}/vehicle-types/simple/${vehicleType["image-url"]}`}
-            alt={vehicleType.type}
-          />
-        </Col>
-        <Col xs="3" sm="2" className="modal-close">
+        <Col xs="12" className="modal-close">
           <img
             src={`${process.env.PUBLIC_URL}/close.svg`}
             alt="Close"
@@ -42,17 +31,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
       <VehicleDetailCard className="v-card" vehicle={selectedVehicle} />
 
       <Row className="comms">
-        <Col xs="6">
-          <a href={`tel:${selectedVehicle.driver.mobile}`}>
-            <span>Call</span>
-            <img
-              loading="lazy"
-              alt="Call"
-              src={`${process.env.PUBLIC_URL}/comms/phone-call.png`}
-            />
-          </a>
-        </Col>
-        <Col xs="6">
+        <Col xs="12">
           <a
             target="whatsapp"
             href={`https://wa.me/${selectedVehicle.driver.mobile}?text=Hello ${
@@ -61,11 +40,11 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
               "Message from: https://packpickup.com"
             )} %0a${encodeURI(whatsAppMessage)}`}
           >
-            <span>WhatsApp</span>
             <img
               alt="WhatsApp"
               src={`${process.env.PUBLIC_URL}/comms/whatsapp.png`}
             />
+            <span>WhatsApp</span>
           </a>
         </Col>
       </Row>
@@ -117,6 +96,5 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
   );
 };
 
-const days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 const whatsAppMessage =
   "Are you available for packaging and transportation service?";

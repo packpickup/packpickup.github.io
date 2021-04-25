@@ -1,12 +1,21 @@
 .result-item {
-  border: 3px solid #5c5c5c;
+  border: 1px solid #5c5c5c;
   margin-bottom: 15px;
   margin-left: 0;
   margin-right: 0;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  .mobile-only {
+    padding-top: 12px;
+    padding-left: 0;
+  }
+
   &.item-clickable {
     cursor: pointer;
+    .mobile-only {
+      padding-left: 12px;
+    }
   }
 
   .driver-image {
@@ -41,17 +50,18 @@
     }
   }
 
-  .rating {
-    top: -20px;
-    position: relative;
-    left: 10px;
+  .v-info {
+    padding-right: 0;
+  }
+
+  .desktop-only {
+    display: none;
     @media (min-width: 576px) {
-      top: 0;
-      left: 0;
+      display: block;
     }
   }
 
-  .spacer {
+  .mobile-only {
     @media (min-width: 576px) {
       display: none;
     }

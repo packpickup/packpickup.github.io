@@ -25,18 +25,42 @@ export const VehicleDetailCard: FunctionComponent<Props> = ({
       className={`result-item ${className} ${onClick ? "item-clickable" : ""}`}
       onClick={onClick}
     >
-      <Col xs="4" sm="3" className="v-main-img">
+      <Col xs="4" className="v-main-img">
         <img
           loading="lazy"
           src={`${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/main.jpg`}
           alt={vehicle["vehicle-brand"]}
         />
       </Col>
-      <Col xs="8" sm="6">
+      <Col xs="8" className="v-info">
+        <div className="rating">
+          <Rating rating={Number(vehicle.driver["rating-stars"])} />
+        </div>
         <strong>
           {vehicle["vehicle-brand"]} - {vehicle["brand-model"]} -{" "}
           {vehicle["model-year"]}
         </strong>
+        <div className="desktop-only">
+          {vehicle.driver && (
+            <>
+              <div>
+                <img
+                  loading="lazy"
+                  className="driver-name-avatar"
+                  src={`${process.env.PUBLIC_URL}/green-avatar.svg`}
+                  alt="Driver"
+                />{" "}
+                {vehicle.driver.name}
+              </div>
+              <div>Area: {vehicle.driver.area}</div>
+              <div>
+                {vehicle.driver.city}, {vehicle.driver.country}
+              </div>
+            </>
+          )}
+        </div>
+      </Col>
+      <Col xs="12" className="mobile-only">
         {vehicle.driver && (
           <>
             <div>
@@ -55,24 +79,6 @@ export const VehicleDetailCard: FunctionComponent<Props> = ({
           </>
         )}
       </Col>
-      {vehicle.driver && (
-        <>
-          <Col xs="4" sm="1" className="spacer" />
-          <Col xs="8" sm="3" className="driver-info">
-            <>
-              <div
-                className="driver-image"
-                style={{
-                  backgroundImage: `url(${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/driver.jpg)`,
-                }}
-              />
-              <span className="rating">
-                <Rating rating={Number(vehicle.driver["rating-stars"])} />
-              </span>
-            </>
-          </Col>
-        </>
-      )}
     </Row>
   );
 };

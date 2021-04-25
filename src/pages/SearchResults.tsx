@@ -95,7 +95,6 @@ export const SearchResults: FunctionComponent = () => {
       >
         {activeVehicle && (
           <VehicleDetailsModal
-            vehicleType={vehicleType}
             selectedVehicle={activeVehicle}
             onHide={() => setShow(false)}
           />
