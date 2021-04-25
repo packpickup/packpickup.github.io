@@ -39,6 +39,13 @@
     }
   }
 
+  .v-link {
+    display: block;
+    &:active {
+      box-shadow: 0px 0px 5px #2f7fec;
+    }
+  }
+
   .see-more {
     cursor: pointer;
     width: 100%;

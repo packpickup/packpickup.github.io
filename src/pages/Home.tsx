@@ -31,6 +31,7 @@ export const Home: FunctionComponent = () => {
         {vehicleTypes.map((vehicleType) => (
           <Col xs="6" key={vehicleType["vehicle-type-id"]} className="v-type">
             <Link
+              className="v-link"
               to={`/search-results/?v-type=${vehicleType["vehicle-type-id"]}`}
             >
               <img
