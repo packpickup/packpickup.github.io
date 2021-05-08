@@ -36,10 +36,12 @@ export const VehicleDetailCard: FunctionComponent<Props> = ({
         <div className="rating">
           <Rating rating={Number(vehicle.driver["rating-stars"])} />
         </div>
-        <strong>
-          {vehicle["vehicle-brand"]} - {vehicle["brand-model"]} -{" "}
-          {vehicle["model-year"]}
-        </strong>
+        <div>
+          <strong>
+            {vehicle["vehicle-brand"]} - {vehicle["brand-model"]} -{" "}
+            {vehicle["model-year"]}
+          </strong>
+        </div>
         <div className="desktop-only">
           {vehicle.driver && (
             <>

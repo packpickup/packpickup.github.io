@@ -21,6 +21,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
       <Row>
         <Col xs="12" className="modal-close">
           <img
+            title="Close"
             src={`${process.env.PUBLIC_URL}/close.svg`}
             alt="Close"
             onClick={onHide}
