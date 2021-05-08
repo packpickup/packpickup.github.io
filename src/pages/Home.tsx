@@ -44,7 +44,8 @@ export const Home: FunctionComponent = () => {
                   "send",
                   "event",
                   "Home page",
-                  "vehicle-type-click"`${vehicleType["vehicle-type-id"]}-${vehicleType.type}`
+                  "vehicle-type-click",
+                  `${vehicleType["vehicle-type-id"]}-${vehicleType.type}`
                 );
               }}
             >
