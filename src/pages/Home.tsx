@@ -38,11 +38,10 @@ export const Home: FunctionComponent = () => {
               className="v-link"
               to={`/search-results/?v-type=${vehicleType["vehicle-type-id"]}`}
               onClick={() => {
-                window.ga("send", {
-                  hitType: "event",
-                  eventCategory: "Home page",
-                  eventAction: "vehicle-type-click",
-                  eventLabel: `${vehicleType["vehicle-type-id"]}-${vehicleType.type}`,
+                window.gtag("event", "click", {
+                  event_category: "Home page",
+                  event_label: "vehicle-type-click",
+                  value: `${vehicleType["vehicle-type-id"]}-${vehicleType.type}`,
                 });
               }}
             >
@@ -61,11 +60,10 @@ export const Home: FunctionComponent = () => {
             loading="lazy"
             onClick={() => {
               window.alert("Work in progress...");
-              window.ga("send", {
-                hitType: "event",
-                eventCategory: "Home page",
-                eventAction: "see-more-click",
-                eventLabel: "See more vehicle types",
+              window.gtag("event", "click", {
+                event_category: "Home page",
+                event_label: "see-more-click",
+                value: "See more vehicle types",
               });
             }}
             className="see-more"

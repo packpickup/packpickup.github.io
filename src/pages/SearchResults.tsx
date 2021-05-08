@@ -83,11 +83,10 @@ export const SearchResults: FunctionComponent = () => {
                 setActiveVehicle(vehicle);
                 setShow(true);
 
-                window.ga("send", {
-                  hitType: "event",
-                  eventCategory: "Results page",
-                  eventAction: "vehicle-details-click",
-                  eventLabel: `${vehicle["vehicle-id"]}-${vehicle.driver.mobile}`,
+                window.gtag("event", "click", {
+                  event_category: "Results page",
+                  event_label: "vehicle-details-click",
+                  value: `${vehicle["vehicle-id"]}-${vehicle.driver.mobile}`,
                 });
               }}
             />
