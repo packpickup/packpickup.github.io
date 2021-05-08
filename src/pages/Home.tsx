@@ -33,6 +33,15 @@ export const Home: FunctionComponent = () => {
             <Link
               className="v-link"
               to={`/search-results/?v-type=${vehicleType["vehicle-type-id"]}`}
+              onClick={() => {
+                window.ga("send", {
+                  hitType: "event",
+                  eventCategory: "Home page",
+                  eventAction: "click",
+                  eventLabel: "vehicle-type",
+                  eventValue: `${vehicleType["vehicle-type-id"]}-${vehicleType.type}`,
+                });
+              }}
             >
               <img
                 loading="lazy"
@@ -47,7 +56,15 @@ export const Home: FunctionComponent = () => {
         <Col>
           <img
             loading="lazy"
-            onClick={() => window.alert("Work in progress...")}
+            onClick={() => {
+              window.alert("Work in progress...");
+              window.ga("send", {
+                hitType: "event",
+                eventCategory: "Home page",
+                eventAction: "click",
+                eventLabel: "See more vehicle types",
+              });
+            }}
             className="see-more"
             src={`${process.env.PUBLIC_URL}/vehicle-types/see-more-vehicles.svg`}
             alt="See more"
