@@ -36,6 +36,13 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
           <a
             target="whatsapp"
             onClick={() => {
+              window.ga(
+                "send",
+                "event",
+                "x-driver-contacted",
+                "x-click",
+                selectedVehicle.driver.name
+              );
               window.ga("send", {
                 hitType: "event",
                 eventCategory: "Driver contacted",
