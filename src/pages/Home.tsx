@@ -2,7 +2,6 @@ import "./Home.scss";
 
 import { FunctionComponent, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
-import ReactGA from "react-ga";
 import { Link } from "react-router-dom";
 
 import vehicleTypes from "../data/vehicle-types.json";
@@ -39,14 +38,12 @@ export const Home: FunctionComponent = () => {
               className="v-link"
               to={`/search-results/?v-type=${vehicleType["vehicle-type-id"]}`}
               onClick={() => {
-                console.log("LOG vehicle type clicked");
-                ReactGA.ga(
-                  "send",
-                  "event",
-                  "Home page",
-                  "vehicle-type-click",
-                  `${vehicleType["vehicle-type-id"]}-${vehicleType.type}`
-                );
+                window.ga("send", {
+                  hitType: "event",
+                  eventCategory: "Home page",
+                  eventAction: "vehicle-type-click",
+                  eventLabel: `${vehicleType["vehicle-type-id"]}-${vehicleType.type}`,
+                });
               }}
             >
               <img
@@ -64,13 +61,12 @@ export const Home: FunctionComponent = () => {
             loading="lazy"
             onClick={() => {
               window.alert("Work in progress...");
-              ReactGA.ga(
-                "send",
-                "event",
-                "Home page",
-                "click",
-                "See more vehicle types"
-              );
+              window.ga("send", {
+                hitType: "event",
+                eventCategory: "Home page",
+                eventAction: "see-more-click",
+                eventLabel: "See more vehicle types",
+              });
             }}
             className="see-more"
             src={`${process.env.PUBLIC_URL}/vehicle-types/see-more-vehicles.svg`}
