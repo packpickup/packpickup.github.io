@@ -84,12 +84,13 @@ export const SearchResults: FunctionComponent = () => {
                 setActiveVehicle(vehicle);
                 setShow(true);
 
-                ReactGA.ga("send", {
-                  hitType: "event",
-                  eventCategory: "Results page",
-                  eventAction: "vehicle-details-click",
-                  eventLabel: `${vehicle["vehicle-id"]}-${vehicle.driver.mobile}`,
-                });
+                ReactGA.ga(
+                  "send",
+                  "event",
+                  "Results page",
+                  "vehicle-details-click",
+                  `${vehicle["vehicle-id"]}-${vehicle.driver.mobile}`
+                );
               }}
             />
           );
