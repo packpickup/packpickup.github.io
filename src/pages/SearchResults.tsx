@@ -1,7 +1,8 @@
 import "./SearchResults.scss";
 
-import { FunctionComponent, useMemo, useState } from "react";
+import { FunctionComponent, useEffect, useMemo, useState } from "react";
 import { Col, Modal, Row } from "react-bootstrap";
+import ReactGA from "react-ga";
 import { Link, useLocation } from "react-router-dom";
 
 import { VehicleDetailCard } from "../components/VehicleDetailCard";
@@ -39,6 +40,10 @@ export const SearchResults: FunctionComponent = () => {
       ) || vehicleTypes[0]
     );
   }, [vehicleTypeId]);
+
+  useEffect(() => {
+    document.title = `${vehicleType.type} - PackPickup.com`;
+  }, [vehicleType.type]);
 
   return (
     <div className="search-results">
@@ -79,7 +84,7 @@ export const SearchResults: FunctionComponent = () => {
                 setActiveVehicle(vehicle);
                 setShow(true);
 
-                window.ga("send", {
+                ReactGA.ga("send", {
                   hitType: "event",
                   eventCategory: "Results page",
                   eventAction: "click",

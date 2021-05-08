@@ -2,6 +2,7 @@ import "./VehicleDetailsModal.scss";
 
 import { FunctionComponent } from "react";
 import { Col, Row } from "react-bootstrap";
+import ReactGA from "react-ga";
 
 import drivers from "../data/drivers.json";
 import vehicles from "../data/vehicles.json";
@@ -36,14 +37,14 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
           <a
             target="whatsapp"
             onClick={() => {
-              window.ga(
+              ReactGA.ga(
                 "send",
                 "event",
                 "x-driver-contacted",
                 "x-click",
                 selectedVehicle.driver.name
               );
-              window.ga("send", {
+              ReactGA.ga("send", {
                 hitType: "event",
                 eventCategory: "Driver contacted",
                 eventAction: "click",

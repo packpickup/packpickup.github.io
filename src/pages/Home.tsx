@@ -1,12 +1,17 @@
 import "./Home.scss";
 
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
+import ReactGA from "react-ga";
 import { Link } from "react-router-dom";
 
 import vehicleTypes from "../data/vehicle-types.json";
 
 export const Home: FunctionComponent = () => {
+  useEffect(() => {
+    document.title = "PackPickup.com";
+  }, []);
+
   return (
     <div className="home">
       <Row>
@@ -34,7 +39,8 @@ export const Home: FunctionComponent = () => {
               className="v-link"
               to={`/search-results/?v-type=${vehicleType["vehicle-type-id"]}`}
               onClick={() => {
-                window.ga("send", {
+                console.log("LOG vehicle type clicked");
+                ReactGA.ga("send", {
                   hitType: "event",
                   eventCategory: "Home page",
                   eventAction: "click",
@@ -58,7 +64,7 @@ export const Home: FunctionComponent = () => {
             loading="lazy"
             onClick={() => {
               window.alert("Work in progress...");
-              window.ga("send", {
+              ReactGA.ga("send", {
                 hitType: "event",
                 eventCategory: "Home page",
                 eventAction: "click",
