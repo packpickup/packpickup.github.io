@@ -37,19 +37,11 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
           <a
             target="whatsapp"
             onClick={() => {
-              ReactGA.ga(
-                "send",
-                "event",
-                "x-driver-contacted",
-                "x-click",
-                selectedVehicle.driver.name
-              );
               ReactGA.ga("send", {
                 hitType: "event",
                 eventCategory: "Driver contacted",
-                eventAction: "click",
-                eventLabel: "whatsapp",
-                eventValue: `${selectedVehicle.driver["driver-id"]}-${selectedVehicle.driver.name}-${selectedVehicle.driver.mobile}`,
+                eventAction: "whatsapp-click",
+                eventLabel: `${selectedVehicle.driver["driver-id"]}-${selectedVehicle.driver.name}-${selectedVehicle.driver.mobile}`,
               });
             }}
             href={`https://wa.me/${selectedVehicle.driver.mobile}?text=Hello ${

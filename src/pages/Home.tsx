@@ -43,9 +43,8 @@ export const Home: FunctionComponent = () => {
                 ReactGA.ga("send", {
                   hitType: "event",
                   eventCategory: "Home page",
-                  eventAction: "click",
-                  eventLabel: "vehicle-type",
-                  eventValue: `${vehicleType["vehicle-type-id"]}-${vehicleType.type}`,
+                  eventAction: "vehicle-type-click",
+                  eventLabel: `${vehicleType["vehicle-type-id"]}-${vehicleType.type}`,
                 });
               }}
             >

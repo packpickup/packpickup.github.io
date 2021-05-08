@@ -87,9 +87,8 @@ export const SearchResults: FunctionComponent = () => {
                 ReactGA.ga("send", {
                   hitType: "event",
                   eventCategory: "Results page",
-                  eventAction: "click",
-                  eventLabel: "vehicle-details",
-                  eventValue: `${vehicle["vehicle-id"]}-${vehicle.driver.mobile}`,
+                  eventAction: "vehicle-details-click",
+                  eventLabel: `${vehicle["vehicle-id"]}-${vehicle.driver.mobile}`,
                 });
               }}
             />
