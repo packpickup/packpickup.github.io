@@ -118,5 +118,25 @@
     "city": "Fujaira",
     "area": "Baladiya",
     "rating-stars": "4.5"
+  },
+  {
+    "driver-id": "driver-13",
+    "vehicle-id": "vehicle-13",
+    "name": "Kifauddin",
+    "mobile": "+447310877113",
+    "country": "UAE",
+    "city": "Umm Al Quain",
+    "area": "Baladiya",
+    "rating-stars": "4"
+  },
+  {
+    "driver-id": "driver-14",
+    "vehicle-id": "vehicle-14",
+    "name": "Ghulam",
+    "mobile": "+447310877113",
+    "country": "UAE",
+    "city": "Dubai",
+    "area": "Daira",
+    "rating-stars": "5"
   }
 ]
