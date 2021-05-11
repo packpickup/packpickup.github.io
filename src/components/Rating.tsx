@@ -7,10 +7,11 @@ type Props = {
 };
 
 export const Rating: FunctionComponent<Props> = ({ rating }) => {
+  const rounded = Math.ceil(rating);
   return (
     <span className="rating-stars">
-      {[...Array(rating)].map((_, i) => "★")}
-      {[...Array(5 - rating)].map((_, i) => "☆")}
+      {[...Array(rounded)].map((_, i) => "★")}
+      {[...Array(5 - rounded)].map((_, i) => "☆")}
     </span>
   );
 };
