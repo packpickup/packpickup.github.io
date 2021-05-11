@@ -10,33 +10,104 @@
   {
     "vehicle-id": "vehicle-2",
     "vehicle-type-id": "vehicle-type-1",
-    "number-of-pictures-ref": 1,
-    "vehicle-brand": "BMW",
-    "brand-model": "5 series",
-    "model-year": "2017"
+    "number-of-pictures-ref": 3,
+    "vehicle-brand": "Toyota",
+    "brand-model": "Hilex",
+    "model-year": "2019"
   },
   {
     "vehicle-id": "vehicle-3",
-    "vehicle-type-id": "vehicle-type-1",
-    "number-of-pictures-ref": 1,
+    "vehicle-type-id": "vehicle-type-2",
+    "number-of-pictures-ref": 3,
     "vehicle-brand": "Toyota",
-    "brand-model": "Land cruiser",
-    "model-year": "2012"
+    "brand-model": "Dyna Truck 3 Ton",
+    "model-year": "2011"
   },
   {
     "vehicle-id": "vehicle-4",
     "vehicle-type-id": "vehicle-type-2",
     "number-of-pictures-ref": 2,
     "vehicle-brand": "Toyota",
-    "brand-model": "Big truck",
-    "model-year": "2014"
+    "brand-model": "Dyna Truck 2 Ton",
+    "model-year": "2021"
   },
   {
     "vehicle-id": "vehicle-5",
-    "vehicle-type-id": "vehicle-type-2",
-    "number-of-pictures-ref": 2,
-    "vehicle-brand": "Honda",
-    "brand-model": "Civic",
+    "vehicle-type-id": "vehicle-type-3",
+    "number-of-pictures-ref": 4,
+    "vehicle-brand": "Toyota",
+    "brand-model": "Dyna-Recovery",
+    "model-year": "2009"
+  },
+  {
+    "vehicle-id": "vehicle-6",
+    "vehicle-type-id": "vehicle-type-3",
+    "number-of-pictures-ref": 4,
+    "vehicle-brand": "Mitsubishi",
+    "brand-model": "Recovery",
     "model-year": "2019"
+  },
+  {
+    "vehicle-id": "vehicle-7",
+    "vehicle-type-id": "vehicle-type-4",
+    "number-of-pictures-ref": 4,
+    "vehicle-brand": "Mitsubishi",
+    "brand-model": "Packaging And Movers",
+    "model-year": "2019"
+  },
+  {
+    "vehicle-id": "vehicle-8",
+    "vehicle-type-id": "vehicle-type-4",
+    "number-of-pictures-ref": 3,
+    "vehicle-brand": "Toyota",
+    "brand-model": "Best Movers",
+    "model-year": "2019"
+  },
+  {
+    "vehicle-id": "vehicle-9",
+    "vehicle-type-id": "vehicle-type-5",
+    "number-of-pictures-ref": 4,
+    "vehicle-brand": "Mercedez",
+    "brand-model": "Non Drinking Water",
+    "model-year": "2013"
+  },
+  {
+    "vehicle-id": "vehicle-10",
+    "vehicle-type-id": "vehicle-type-5",
+    "number-of-pictures-ref": 3,
+    "vehicle-brand": "Volvo",
+    "brand-model": "Sewage",
+    "model-year": "2016"    
+  },
+  {
+    "vehicle-id": "vehicle-11",
+    "vehicle-type-id": "vehicle-type-5",
+    "number-of-pictures-ref": 4,
+    "vehicle-brand": "Isuzu",
+    "brand-model": "Drinking Water",
+    "model-year": "2012"  
+  },
+  {
+    "vehicle-id": "vehicle-12",
+    "vehicle-type-id": "vehicle-type-6",
+    "number-of-pictures-ref": 4,
+    "vehicle-brand": "Tata",
+    "brand-model": "Contanier Trailer",
+    "model-year": "2015"
+  },
+  {
+    "vehicle-id": "vehicle-13",
+    "vehicle-type-id": "vehicle-type-6",
+    "number-of-pictures-ref": 3,
+    "vehicle-brand": "Volvo",
+    "brand-model": "Trailer",
+    "model-year": "2016" 
+  },
+  {
+    "vehicle-id": "vehicle-14",
+    "vehicle-type-id": "vehicle-type-6",
+    "number-of-pictures-ref": 4,
+    "vehicle-brand": "Isuzu",
+    "brand-model": "Dumper",
+    "model-year": "2016"
   }
-]
