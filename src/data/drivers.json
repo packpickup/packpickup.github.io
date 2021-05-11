@@ -2,51 +2,121 @@
   {
     "driver-id": "driver-1",
     "vehicle-id": "vehicle-1",
-    "name": "Abdul Ghafoor",
-    "mobile": "+447722180577",
+    "name": "Aslam",
+    "mobile": "+447310877113",
     "country": "UAE",
     "city": "Dubai",
-    "area": "Al Quoz, Sharjah",
+    "area": "Al Quoz",
     "rating-stars": "4"
   },
   {
     "driver-id": "driver-2",
     "vehicle-id": "vehicle-2",
-    "name": "Shah Islam",
-    "mobile": "+971505507892",
+    "name": "Abdullah",
+    "mobile": "+447310877113",
     "country": "UAE",
-    "city": "Dubai",
-    "area": "Al Quoz, Sharjah, Dubai",
+    "city": "Sharjah",
+    "area": "Rolla",
     "rating-stars": "3"
   },
   {
     "driver-id": "driver-3",
     "vehicle-id": "vehicle-3",
-    "name": "Kareem Jan Khan with long name",
-    "mobile": "+447722180577",
+    "name": "Ramesh",
+    "mobile": "+447310877113",
     "country": "UAE",
     "city": "Dubai",
-    "area": "Sharjah, Dubai",
+    "area": "Discovery Garderns",
     "rating-stars": "5"
   },
   {
     "driver-id": "driver-4",
     "vehicle-id": "vehicle-4",
-    "name": "Kareem Jan Khan with long name",
-    "mobile": "+447722180577",
+    "name": "Nizamuddin",
+    "mobile": "+447310877113",
     "country": "UAE",
     "city": "Dubai",
-    "area": "Sharjah, Dubai",
-    "rating-stars": "5"
+    "area": "DIP",
+    "rating-stars": "4"
   },
   {
     "driver-id": "driver-5",
     "vehicle-id": "vehicle-5",
-    "name": "Abdul Shakoor",
-    "mobile": "+447722180577",
+    "name": "Anwar",
+    "mobile": "+447310877113",
+    "country": "UAE",
+    "city": "Ajman",
+    "area": "Baladiya",
+    "rating-stars": "3"
+  },
+  {
+    "driver-id": "driver-6",
+    "vehicle-id": "vehicle-6",
+    "name": "Vidyakar",
+    "mobile": "+447310877113",
     "country": "UAE",
     "city": "Dubai",
-    "area": "Sharjah, Dubai",
+    "area": "Jumaira Circle",
     "rating-stars": "5"
+  },
+  {
+    "driver-id": "driver-7",
+    "vehicle-id": "vehicle-7",
+    "name": "Mohammad",
+    "mobile": "+447310877113",
+    "country": "UAE",
+    "city": "Dubai",
+    "area": "Qusais",
+    "rating-stars": "2.5"
+  },
+  {
+    "driver-id": "driver-8",
+    "vehicle-id": "vehicle-8",
+    "name": "Shahbaz",
+    "mobile": "+447310877113",
+    "country": "UAE",
+    "city": "Dubai",
+    "area": "Satwa",
+    "rating-stars": "4"
+  },
+  {
+    "driver-id": "driver-9",
+    "vehicle-id": "vehicle-9",
+    "name": "Nooruddin",
+    "mobile": "+447310877113",
+    "country": "UAE",
+    "city": "Abu Dabhi",
+    "area": "Masafi",
+    "rating-stars": "5"
+  },
+  {
+    "driver-id": "driver-10",
+    "vehicle-id": "vehicle-10",
+    "name": "Ashraf Khan",
+    "mobile": "+447310877113",
+    "country": "UAE",
+    "city": "Al Ain",
+    "area": "Sanaya",
+    "rating-stars": "4"
+  },
+  {
+    "driver-id": "driver-11",
+    "vehicle-id": "vehicle-11",
+    "name": "Ranjeet Sing",
+    "mobile": "+447310877113",
+    "country": "UAE",
+    "city": "Ras Al Khaima",
+    "area": "City Center",
+    "rating-stars": "5"
+  },
+  {
+    "driver-id": "driver-12",
+    "vehicle-id": "vehicle-12",
+    "name": "Naziruddin",
+    "mobile": "+447310877113",
+    "country": "UAE",
+    "city": "Fujaira",
+    "area": "Baladiya",
+    "rating-stars": "4.5"
   }
 ]
