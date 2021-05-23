@@ -53,7 +53,7 @@ export const VehicleDetailCard: FunctionComponent<Props> = ({
               <div>
                 <img
                   className="driver-name-avatar-icon"
-                  src={`${process.env.PUBLIC_URL}/green-avatar.svg`}
+                  src={`${process.env.PUBLIC_URL}/driver-avatar.svg`}
                   alt="Driver"
                 />{" "}
                 {vehicle.driver.name}
