@@ -8,14 +8,12 @@
 
   .mobile-only {
     padding-top: 12px;
-    padding-left: 0;
+    left: -2px;
+    position: relative;
   }
 
   &.item-clickable {
     cursor: pointer;
-    .mobile-only {
-      padding-left: 12px;
-    }
   }
 
   .driver-image {
@@ -28,10 +26,14 @@
     display: inline-block;
   }
 
-  .driver-name-avatar {
+  .driver-name-avatar-icon {
     width: 17px;
     margin-top: -5px;
     margin-right: 3px;
+  }
+
+  .driver-areas-icon {
+    width: 17px;
   }
 
   .v-main-img {
@@ -51,7 +53,7 @@
   }
 
   .v-info {
-    padding-right: 0;
+    padding-right: 6px;
   }
 
   .rating {

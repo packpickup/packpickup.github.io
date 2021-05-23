@@ -28,12 +28,17 @@ export const VehicleDetailCard: FunctionComponent<Props> = ({
       <Col xs="4" className="v-main-img">
         <img
           loading="lazy"
-          src={`${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/main.jpg`}
+          src={`${process.env.PUBLIC_URL}/vehicles/${vehicle["vehicle-id"]}/${
+            onClick ? "main" : "driver"
+          }.jpg`}
           alt={vehicle["vehicle-brand"]}
         />
+        <div className="mobile-only">
+          <Rating rating={Number(vehicle.driver["rating-stars"])} />
+        </div>
       </Col>
       <Col xs="8" className="v-info">
-        <div className="rating">
+        <div className="rating desktop-only">
           <Rating rating={Number(vehicle.driver["rating-stars"])} />
         </div>
         <div>
@@ -42,44 +47,28 @@ export const VehicleDetailCard: FunctionComponent<Props> = ({
             {vehicle["model-year"]}
           </strong>
         </div>
-        <div className="desktop-only">
+        <div>
           {vehicle.driver && (
             <>
               <div>
                 <img
-                  loading="lazy"
-                  className="driver-name-avatar"
+                  className="driver-name-avatar-icon"
                   src={`${process.env.PUBLIC_URL}/green-avatar.svg`}
                   alt="Driver"
                 />{" "}
                 {vehicle.driver.name}
               </div>
-              <div>Area: {vehicle.driver.area}</div>
               <div>
-                {vehicle.driver.city}, {vehicle.driver.country}
+                <img
+                  className="driver-areas-icon"
+                  src={`${process.env.PUBLIC_URL}/map-point.svg`}
+                  alt="Areas"
+                />{" "}
+                {vehicle.driver.area}, {vehicle.driver.city}
               </div>
             </>
           )}
         </div>
-      </Col>
-      <Col xs="12" className="mobile-only">
-        {vehicle.driver && (
-          <>
-            <div>
-              <img
-                loading="lazy"
-                className="driver-name-avatar"
-                src={`${process.env.PUBLIC_URL}/green-avatar.svg`}
-                alt="Driver"
-              />{" "}
-              {vehicle.driver.name}
-            </div>
-            <div>Area: {vehicle.driver.area}</div>
-            <div>
-              {vehicle.driver.city}, {vehicle.driver.country}
-            </div>
-          </>
-        )}
       </Col>
     </Row>
   );

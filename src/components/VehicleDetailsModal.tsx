@@ -18,21 +18,19 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
 }) => {
   return (
     <div className="vehicle-details">
-      <Row>
-        <Col xs="12" className="modal-close">
-          <img
-            title="Close"
-            src={`${process.env.PUBLIC_URL}/close.svg`}
-            alt="Close"
-            onClick={onHide}
-          />
-        </Col>
-      </Row>
+      <div className="modal-close">
+        <img
+          title="Close"
+          src={`${process.env.PUBLIC_URL}/close.svg`}
+          alt="Close"
+          onClick={onHide}
+        />
+      </div>
 
       <VehicleDetailCard className="v-card" vehicle={selectedVehicle} />
 
       <Row className="comms">
-        <Col xs="12">
+        <Col xs="12" className="text-center">
           <a
             target="whatsapp"
             onClick={() => {
@@ -66,13 +64,6 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
             loading="lazy"
             alt="vehicle main"
             src={`${process.env.PUBLIC_URL}/vehicles/${selectedVehicle["vehicle-id"]}/main.jpg`}
-          />
-        </Col>
-        <Col xs="12" sm="6">
-          <img
-            loading="lazy"
-            alt="driver"
-            src={`${process.env.PUBLIC_URL}/vehicles/${selectedVehicle["vehicle-id"]}/driver.jpg`}
           />
         </Col>
         {[...Array(selectedVehicle["number-of-pictures-ref"])].map((_, i) => (
