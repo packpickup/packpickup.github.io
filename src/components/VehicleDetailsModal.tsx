@@ -30,7 +30,7 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
       <VehicleDetailCard className="v-card" vehicle={selectedVehicle} />
 
       <Row className="comms">
-        <Col xs="12" className="text-center">
+        <Col xs="12" className="text-right">
           <a
             target="whatsapp"
             onClick={() => {
@@ -46,11 +46,11 @@ export const VehicleDetailsModal: FunctionComponent<Props> = ({
               "Message from: https://packpickup.com"
             )} %0a${encodeURI(whatsAppMessage)}`}
           >
+            <span>WhatsApp</span>
             <img
               alt="WhatsApp"
               src={`${process.env.PUBLIC_URL}/comms/whatsapp.png`}
             />
-            <span>WhatsApp</span>
           </a>
         </Col>
       </Row>

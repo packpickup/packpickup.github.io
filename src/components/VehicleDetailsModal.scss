@@ -34,7 +34,7 @@
   }
 
   .photos {
-    margin-top: 20px;
+    margin-top: 0px;
 
     img {
       width: 100%;
@@ -67,7 +67,7 @@
   }
 
   .comms {
-    margin-bottom: 30px;
+    margin-top: -35px;
 
     span {
       @media (min-width: 576px) {
@@ -81,7 +81,7 @@
 
     img {
       width: 50px;
-      margin-right: 10px;
+      margin-left: 10px;
     }
   }
 }
