@@ -28,7 +28,7 @@ export const Home: FunctionComponent = () => {
       </Row>
       <Row>
         <Col xs="12">
-          <h1 className="title">Hire! Transportation services</h1>
+          <h1 className="title">Find Transportation Solutions!</h1>
         </Col>
       </Row>
       <Row>
