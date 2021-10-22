@@ -1,4 +1,29 @@
 [
+   {
+    "vehicle-id": "PPu0015-971529900678-01",
+    "vehicle-type-id": "vehicle-type-2",
+    "number-of-pictures-ref": 3,
+    "vehicle-brand": "Mazda",
+    "brand-model": "2 TON",
+    "model-year": "2015"
+  },
+   {
+    "vehicle-id": "PPu0015-971529900678-02",
+    "vehicle-type-id": "vehicle-type-1",
+    "number-of-pictures-ref": 1,
+    "vehicle-brand": "Toyota",
+    "brand-model": "1 TON",
+    "model-year": "2015"
+  },
+   {
+    "vehicle-id": "PPu0015-971529900678-03",
+    "vehicle-type-id": "vehicle-type-2",
+    "number-of-pictures-ref": 2,
+    "vehicle-brand": "Mitsubishi Canter",
+    "brand-model": "3 TON",
+    "model-year": "2015"
+  },
+  
   {
     "vehicle-id": "vehicle-1",
     "vehicle-type-id": "vehicle-type-1",
