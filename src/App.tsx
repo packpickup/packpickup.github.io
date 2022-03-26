@@ -25,6 +25,7 @@ export const App: FunctionComponent = () => {
         </div>
         <footer className="footer">
           <small>© PackPickup {new Date().getFullYear()}</small>
+          <h6>------------</h6>
         </footer>
       </Container>
     </HashRouter>
