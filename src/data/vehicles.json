@@ -1,5 +1,21 @@
 [
-     {
+   {
+    "vehicle-id": "Ppu0009-971508756804-01",
+    "vehicle-type-id": "vehicle-type-4",
+    "number-of-pictures-ref": 2,
+    "vehicle-brand": "Toyota",
+    "brand-model": "3 TON",
+    "model-year": "2015"
+  },
+   {
+    "vehicle-id": "Ppu0035-971553399382-01",
+    "vehicle-type-id": "vehicle-type-1",
+    "number-of-pictures-ref": 3,
+    "vehicle-brand": "Toyota Hilux",
+    "brand-model": "1 TON",
+    "model-year": "2012"
+  },
+   {
     "vehicle-id": "Ppu0028-971552442297-01",
     "vehicle-type-id": "vehicle-type-1",
     "number-of-pictures-ref": 2,
