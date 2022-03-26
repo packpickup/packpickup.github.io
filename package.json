@@ -4,6 +4,7 @@
   "homepage": "https://packpickup.github.io",
   "private": false,
   "dependencies": {
+    "@ideasio/add-to-homescreen-react": "^1.0.10",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -13,12 +14,12 @@
     "@types/react-dom": "^17.0.0",
     "bootstrap": "^4.6.0",
     "lint-staged": "^10.5.4",
-    "sass": "1.49.9",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "sass": "1.49.9",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
