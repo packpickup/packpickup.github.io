@@ -1,4 +1,20 @@
 [
+     {
+    "vehicle-id": "Ppu0028-971552442297-01",
+    "vehicle-type-id": "vehicle-type-1",
+    "number-of-pictures-ref": 2,
+    "vehicle-brand": "Toyota",
+    "brand-model": "1 TON",
+    "model-year": "2015"
+  },
+   {
+    "vehicle-id": "Ppu0012-971556161074-01",
+    "vehicle-type-id": "vehicle-type-1",
+    "number-of-pictures-ref": 2,
+    "vehicle-brand": "Toyota",
+    "brand-model": "1 TON",
+    "model-year": "2015"
+  },
    {
     "vehicle-id": "PPu0015-971529900678-01",
     "vehicle-type-id": "vehicle-type-2",
