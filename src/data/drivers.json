@@ -1,7 +1,7 @@
 [
-    {
-    "driver-id": "Ppu0035-971553399382-01-driver",
-    "vehicle-id": "Ppu0035-971553399382-01-vehicle",
+  {
+    "driver-id": "driver-Ppu0035-971553399382-01",
+    "vehicle-id": "vehicle-Ppu0035-971553399382-01",
     "name": "Nadir Khan",
     "mobile": "971553399382",
     "country": "UAE",
@@ -9,9 +9,9 @@
     "area": "Dubai Marina and Discovery Gardens",
     "rating-stars": "4"
   },
-   {
-    "driver-id": "Ppu0009-971508756804-01-driver",
-    "vehicle-id": "Ppu0009-971508756804-01-vehicle",
+  {
+    "driver-id": "driver-Ppu0009-971508756804-01",
+    "vehicle-id": "vehicle-Ppu0009-971508756804-01",
     "name": "IQ Movers",
     "mobile": "971508756804",
     "country": "UAE",
@@ -19,9 +19,9 @@
     "area": "Discovery Gardens",
     "rating-stars": "3"
   },
-   {
-    "driver-id": "Ppu0012-971556161074-01-driver",
-    "vehicle-id": "Ppu0012-971556161074-01-vehicle",
+  {
+    "driver-id": "driver-Ppu0012-971556161074-01",
+    "vehicle-id": "vehicle-Ppu0012-971556161074-01",
     "name": "Iqbal",
     "mobile": "971556161074",
     "country": "UAE",
@@ -30,8 +30,8 @@
     "rating-stars": "4"
   },
   {
-    "driver-id": "Ppu0028-971552442297-01-driver",
-    "vehicle-id": "Ppu0028-971552442297-01-vehicle",
+    "driver-id": "driver-Ppu0028-971552442297-01",
+    "vehicle-id": "vehicle-Ppu0028-971552442297-01",
     "name": "Mr Faisal",
     "mobile": "971552442297",
     "country": "UAE",
@@ -40,8 +40,8 @@
     "rating-stars": "4"
   },
   {
-    "driver-id": "PPu0015-971529900678-01-driver",
-    "vehicle-id": "PPu0015-971529900678-01-vehicle",
+    "driver-id": "driver-PPu0015-971529900678-01",
+    "vehicle-id": "vehicle-PPu0015-971529900678-01",
     "name": "Ghulam Asghar",
     "mobile": "971529900678",
     "country": "UAE",
@@ -50,8 +50,8 @@
     "rating-stars": "5"
   },
   {
-    "driver-id": "PPu0015-971529900678-02-driver",
-    "vehicle-id": "PPu0015-971529900678-02-vehicle",
+    "driver-id": "driver-PPu0015-971529900678-02",
+    "vehicle-id": "vehicle-PPu0015-971529900678-02",
     "name": "Ghulam Asghar",
     "mobile": "971529900678",
     "country": "UAE",
@@ -60,8 +60,8 @@
     "rating-stars": "5"
   },
   {
-    "driver-id": "PPu0015-971529900678-03-driver",
-    "vehicle-id": "PPu0015-971529900678-03-vehicle",
+    "driver-id": "driver-PPu0015-971529900678-03",
+    "vehicle-id": "vehicle-PPu0015-971529900678-03",
     "name": "Ghulam Asghar",
     "mobile": "971529900678",
     "country": "UAE",

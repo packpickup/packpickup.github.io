@@ -1,171 +1,58 @@
 [
-   {
-    "vehicle-id": "Ppu0009-971508756804-01",
+  {
+    "vehicle-id": "vehicle-Ppu0009-971508756804-01",
     "vehicle-type-id": "vehicle-type-4",
     "number-of-pictures-ref": 2,
     "vehicle-brand": "Toyota",
     "brand-model": "3 TON",
     "model-year": "2015"
   },
-   {
-    "vehicle-id": "Ppu0035-971553399382-01",
+  {
+    "vehicle-id": "vehicle-Ppu0035-971553399382-01",
     "vehicle-type-id": "vehicle-type-1",
     "number-of-pictures-ref": 3,
     "vehicle-brand": "Toyota Hilux",
     "brand-model": "1 TON",
     "model-year": "2012"
   },
-   {
-    "vehicle-id": "Ppu0028-971552442297-01",
+  {
+    "vehicle-id": "vehicle-Ppu0028-971552442297-01",
     "vehicle-type-id": "vehicle-type-1",
     "number-of-pictures-ref": 2,
     "vehicle-brand": "Toyota",
     "brand-model": "1 TON",
     "model-year": "2015"
   },
-   {
-    "vehicle-id": "Ppu0012-971556161074-01",
+  {
+    "vehicle-id": "vehicle-Ppu0012-971556161074-01",
     "vehicle-type-id": "vehicle-type-1",
     "number-of-pictures-ref": 2,
     "vehicle-brand": "Toyota",
     "brand-model": "1 TON",
     "model-year": "2015"
   },
-   {
-    "vehicle-id": "PPu0015-971529900678-01",
+  {
+    "vehicle-id": "vehicle-PPu0015-971529900678-01",
     "vehicle-type-id": "vehicle-type-2",
     "number-of-pictures-ref": 3,
     "vehicle-brand": "Mazda",
     "brand-model": "2 TON",
     "model-year": "2015"
   },
-   {
-    "vehicle-id": "PPu0015-971529900678-02",
+  {
+    "vehicle-id": "vehicle-PPu0015-971529900678-02",
     "vehicle-type-id": "vehicle-type-1",
     "number-of-pictures-ref": 1,
     "vehicle-brand": "Toyota",
     "brand-model": "1 TON",
     "model-year": "2015"
   },
-   {
-    "vehicle-id": "PPu0015-971529900678-03",
+  {
+    "vehicle-id": "vehicle-PPu0015-971529900678-03",
     "vehicle-type-id": "vehicle-type-2",
     "number-of-pictures-ref": 2,
     "vehicle-brand": "Mitsubishi Canter",
     "brand-model": "3 TON",
     "model-year": "2015"
-  },
-  
-  {
-    "vehicle-id": "vehicle-1",
-    "vehicle-type-id": "vehicle-type-1",
-    "number-of-pictures-ref": 3,
-    "vehicle-brand": "Toyota",
-    "brand-model": "Hilex",
-    "model-year": "2015"
-  },
-  {
-    "vehicle-id": "vehicle-2",
-    "vehicle-type-id": "vehicle-type-1",
-    "number-of-pictures-ref": 3,
-    "vehicle-brand": "Toyota",
-    "brand-model": "Hilex",
-    "model-year": "2019"
-  },
-  {
-    "vehicle-id": "vehicle-3",
-    "vehicle-type-id": "vehicle-type-2",
-    "number-of-pictures-ref": 3,
-    "vehicle-brand": "Toyota",
-    "brand-model": "Dyna Truck 3 Ton",
-    "model-year": "2011"
-  },
-  {
-    "vehicle-id": "vehicle-4",
-    "vehicle-type-id": "vehicle-type-2",
-    "number-of-pictures-ref": 2,
-    "vehicle-brand": "Toyota",
-    "brand-model": "Dyna Truck 2 Ton",
-    "model-year": "2021"
-  },
-  {
-    "vehicle-id": "vehicle-5",
-    "vehicle-type-id": "vehicle-type-3",
-    "number-of-pictures-ref": 4,
-    "vehicle-brand": "Toyota",
-    "brand-model": "Dyna-Recovery",
-    "model-year": "2009"
-  },
-  {
-    "vehicle-id": "vehicle-6",
-    "vehicle-type-id": "vehicle-type-3",
-    "number-of-pictures-ref": 4,
-    "vehicle-brand": "Mitsubishi",
-    "brand-model": "Recovery",
-    "model-year": "2019"
-  },
-  {
-    "vehicle-id": "vehicle-7",
-    "vehicle-type-id": "vehicle-type-4",
-    "number-of-pictures-ref": 4,
-    "vehicle-brand": "Mitsubishi",
-    "brand-model": "Packaging And Movers",
-    "model-year": "2019"
-  },
-  {
-    "vehicle-id": "vehicle-8",
-    "vehicle-type-id": "vehicle-type-4",
-    "number-of-pictures-ref": 3,
-    "vehicle-brand": "Toyota",
-    "brand-model": "Best Movers",
-    "model-year": "2019"
-  },
-  {
-    "vehicle-id": "vehicle-9",
-    "vehicle-type-id": "vehicle-type-5",
-    "number-of-pictures-ref": 4,
-    "vehicle-brand": "Mercedez",
-    "brand-model": "Non Drinking Water",
-    "model-year": "2013"
-  },
-  {
-    "vehicle-id": "vehicle-10",
-    "vehicle-type-id": "vehicle-type-5",
-    "number-of-pictures-ref": 3,
-    "vehicle-brand": "Volvo",
-    "brand-model": "Sewage",
-    "model-year": "2016"    
-  },
-  {
-    "vehicle-id": "vehicle-11",
-    "vehicle-type-id": "vehicle-type-5",
-    "number-of-pictures-ref": 4,
-    "vehicle-brand": "Isuzu",
-    "brand-model": "Drinking Water",
-    "model-year": "2012"  
-  },
-  {
-    "vehicle-id": "vehicle-12",
-    "vehicle-type-id": "vehicle-type-6",
-    "number-of-pictures-ref": 4,
-    "vehicle-brand": "Tata",
-    "brand-model": "Contanier Trailer",
-    "model-year": "2015"
-  },
-  {
-    "vehicle-id": "vehicle-13",
-    "vehicle-type-id": "vehicle-type-6",
-    "number-of-pictures-ref": 3,
-    "vehicle-brand": "Volvo",
-    "brand-model": "Trailer",
-    "model-year": "2016" 
-  },
-  {
-    "vehicle-id": "vehicle-14",
-    "vehicle-type-id": "vehicle-type-6",
-    "number-of-pictures-ref": 4,
-    "vehicle-brand": "Isuzu",
-    "brand-model": "Dumper",
-    "model-year": "2016"
   }
- ]
+]
